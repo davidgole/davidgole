@@ -29,7 +29,7 @@ export default function ThemeSwitcher() {
 
             {/* 🌞 Ikona za svetlo temo */}
             <svg
-                className="swap-off h-10 w-10 fill-current"
+                className="swap-off h-10 w-10 fill-current text-[var(--primary)]"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24">
                 <path
@@ -38,7 +38,7 @@ export default function ThemeSwitcher() {
 
             {/* 🌙 Ikona za temno temo */}
             <svg
-                className="swap-on h-10 w-10 fill-current"
+                className="swap-on h-10 w-10 fill-current text-[var(--primary)]"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24">
                 <path

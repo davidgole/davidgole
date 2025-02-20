@@ -6,10 +6,21 @@
   :root {
     --background: #ffffff;
     --foreground: #171717;
+    --primary: #ff6600;
   }
   .dark {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --primary: #ffcc00;
+  }
+}
+
+@layer utilities {
+  .text-primary {
+    color: var(--primary);
+  }
+  .text-foreground {
+    color: var(--foreground);
   }
 }
 
