@@ -11,7 +11,7 @@ export default function Home() {
         <AnimatedBackground>
             <div>
                 <main className="container px-4 sm:px-10 md:px-20 lg:px-40">
-                    <div className="min-h-screen grid content-center">
+                    <div id={"hero"} className="min-h-screen grid content-center">
                         <FadeInWhenVisible>
                             <div>
                                 <span className="tracking-widest">Hi, my name is </span>
@@ -28,7 +28,7 @@ export default function Home() {
                         <SideNav />
                         {/* About Me */}
                         <FadeInWhenVisible>
-                            <div id="about" className="mt-20 min-h-screen content-center">
+                            <div id="about" className="min-h-screen content-center">
                                 <h2 className="text-4xl sm:text-5xl font-bold">About Me<span
                                     className={"text-[var(--primary)]"}>.</span></h2>
                                 <p className="mt-4 text-base sm:text-lg opacity-35">
@@ -40,9 +40,12 @@ export default function Home() {
                         </FadeInWhenVisible>
 
                         <FadeInWhenVisible>
-                            <div className="relative w-full sm:w-64 h-64 mt-20 mx-auto content-center">
-                                <Image src="/me.jpg" alt="My profile" layout="fill" objectFit="cover"/>
+                            <div className={"lg:min-h-screen content-center"}>
+                                <div className="relative w-full sm:w-64 h-64 mx-auto content-center">
+                                    <Image src="/me.jpg" alt="My profile" layout="fill" objectFit="cover"/>
+                                </div>
                             </div>
+
                         </FadeInWhenVisible>
 
                         {/* Work Experience */}
