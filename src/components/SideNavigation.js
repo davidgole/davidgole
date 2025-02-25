@@ -74,6 +74,8 @@ export default function SideNav() {
                                     className={`block px-4 py-2 text-lg font-semibold transition-colors ${
                                         activeSection === id ? "text-[var(--primary)]" : "text-[var(--foreground)]"
                                     }`}
+                                    animate={activeSection === id ? { scale: 1.2 } : { scale: 1 }}
+                                    transition={{ duration: 0.3, ease: "easeOut" }} // Gladek prehod
                                 >
                                     {label}
                                 </motion.span>
@@ -82,6 +84,7 @@ export default function SideNav() {
                     ))}
                 </ul>
             </motion.nav>
+
 
             {/* MOBILE NAVIGATION */}
             <div className="lg:hidden fixed top-4 right-4 z-50">
