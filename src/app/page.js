@@ -5,6 +5,7 @@ import Image from "next/image";
 import FadeInWhenVisible from "@/components/FadeInWhenVisible";
 import SideNav from "@/components/SideNavigation";
 import { motion, AnimatePresence } from "framer-motion";
+import HyperLink from "@/components/HyperLink";
 
 export default function Home() {
     return (
@@ -32,9 +33,7 @@ export default function Home() {
                                 <h2 className="text-4xl sm:text-5xl font-bold">About Me<span
                                     className={"text-[var(--primary)]"}>.</span></h2>
                                 <p className="mt-4 text-base sm:text-lg opacity-35">
-                                    I'm a passionate developer with experience in web technologies, always eager to learn
-                                    and explore new challenges. My focus is on creating clean, efficient, and user-friendly
-                                    applications.
+                                    I'm a passionate developer with experience in web technologies, always eager to learn and explore new challenges. My focus is on creating clean, efficient, and user-friendly applications.
                                 </p>
                             </div>
                         </FadeInWhenVisible>
@@ -54,22 +53,37 @@ export default function Home() {
                                 <h2 className="text-4xl sm:text-5xl font-bold">Where I've Worked<span
                                     className={"text-[var(--primary)]"}>.</span></h2>
                                 <p className="mt-4 text-base sm:text-lg opacity-35">
-                                    Over the years, I've worked with various companies and projects, gaining experience in
-                                    frontend and backend development. I've collaborated with teams to build scalable and
-                                    performant applications.
+                                    I was first introduced to programming and computer science in technical high school, where I chose computer science as an elective subject. I further deepened my knowledge at the Faculty of Electrical Engineering, Computer Science, and Information Technology.
+
+                                    I am currently in the final year of my Computer Science and Information Technologies university program in Maribor. Throughout my studies, I have gained valuable experience, including working in teams where we developed several projects. These experiences have strengthened my technical skills and my ability to collaborate effectively in group settings.
+                                </p>
+                            </div>
+                        </FadeInWhenVisible>
+                        <FadeInWhenVisible>
+                            <div id="work" className="col-span-1 sm:col-span-2 mt-20 min-h-screen content-center">
+                                <p className="mt-4 text-base sm:text-lg opacity-35">
+                                    Working on ...
+                                    {/*Tukaj bodo prisli logotipi firm kjer sem delal. Lisca, Bartog, Rondo, Skavti.*/}
+
                                 </p>
                             </div>
                         </FadeInWhenVisible>
 
                         {/* Projects */}
                         <FadeInWhenVisible>
+                            <div id="work" className="col-span-1 sm:col-span-2 mt-20 min-h-screen content-center">
+                                <p className="mt-4 text-base sm:text-lg opacity-35">
+                                    Working on ...
+                                    {/*Tukaj bodo prisli screenshoti in povezave na repozitorij od mojih projektov.*/}
+                                </p>
+                            </div>
+                        </FadeInWhenVisible>
+                        <FadeInWhenVisible>
                             <div id="projects" className="col-span-1 sm:col-span-2 mt-20 min-h-screen content-center">
                                 <h2 className="text-4xl sm:text-5xl font-bold">My Projects<span
                                     className={"text-[var(--primary)]"}>.</span></h2>
                                 <p className="mt-4 text-base sm:text-lg opacity-35">
-                                    Here are some of the projects I've worked on. They range from web applications to
-                                    open-source contributions. Each project has helped me improve my skills and solve
-                                    unique challenges.
+                                    Below are some of the projects I have worked on. As part of my university coursework, I participated in numerous group projects, where I learned how to work efficiently with teammates and use collaboration tools such as GitHub and Jira.
                                 </p>
                             </div>
                         </FadeInWhenVisible>
@@ -80,8 +94,28 @@ export default function Home() {
                                 <h2 className="text-4xl sm:text-5xl font-bold">Get in touch<span
                                     className={"text-[var(--primary)]"}>.</span></h2>
                                 <p className="mt-4 text-base sm:text-lg opacity-35">
-                                    Feel free to reach out to me for collaborations, freelance work, or just to say hi! I'm
+                                    Feel free to reach out to me for collaborations, freelance work, or just to say hi!
+                                    I'm
                                     always open to discussing new ideas and opportunities.
+                                </p>
+                                <p className="mt-4 text-base sm:text-lg"><HyperLink
+                                    href={"https://www.facebook.com/david.gole.10"}>facebook</HyperLink></p>
+                                <p className="mt-4 text-base sm:text-lg"><HyperLink
+                                    href={"https://www.instagram.com/gole_david/"}>instagram</HyperLink></p>
+                                <p className="mt-4 text-base sm:text-lg"><HyperLink
+                                    href={"https://github.com/davidgole"}>github</HyperLink></p>
+                                <p className="mt-4 text-base sm:text-lg"><HyperLink
+                                    href={"https://www.linkedin.com/"}>linkedin</HyperLink></p>
+                                <p className="mt-4 text-base sm:text-lg"><HyperLink
+                                    href={"mailto:david.gole@outlook.com"}>david.gole@outlook.com</HyperLink></p>
+
+                            </div>
+                        </FadeInWhenVisible>
+                        <FadeInWhenVisible>
+                            <div id="work" className="col-span-1 sm:col-span-2 mt-20 min-h-screen content-center">
+                                <p className="mt-4 text-base sm:text-lg opacity-35">
+                                    Working on ...
+                                {/*Obrazec za kontaktiranje.*/}
                                 </p>
                             </div>
                         </FadeInWhenVisible>

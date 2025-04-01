@@ -6,7 +6,8 @@ import { Menu, X } from "lucide-react"; // Ikone za meni
 
 const sections = [
     { id: "about", label: "About Me" },
-    { id: "projects", label: "Work & Projects" },
+    { id: "work", label: "Experience" },
+    { id: "projects", label: "Projects" },
     { id: "contact", label: "Get in Touch" },
 ];
 
