@@ -122,9 +122,28 @@ export default function Home() {
 
                 </main>
                 <footer className="m-10 sm:m-20 text-center">
-                    <ThemeSwitcher/>
                     <p className="opacity-35 mt-10">Designed & Built by David Gole</p>
+                    <div className="mt-4 flex justify-center">
+                        {/* Light theme logo */}
+                        <Image
+                            src="/logo_black.png"
+                            alt="Logo"
+                            width={40}
+                            height={40}
+                            className="opacity-30 dark:hidden"
+                        />
+                        {/* Dark theme logo */}
+                        <Image
+                            src="/logo_white.png"
+                            alt="Logo"
+                            width={40}
+                            height={40}
+                            className="opacity-30 hidden dark:block"
+                        />
+                    </div>
                 </footer>
+
+
             </div>
         </AnimatedBackground>
     );
