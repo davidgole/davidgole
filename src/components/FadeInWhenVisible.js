@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 
 export default function FadeInWhenVisible({ children, delay = 0 }) {
     const { ref, inView } = useInView({
-        triggerOnce: false, // Animira samo enkrat
+        triggerOnce: true, // Animira samo enkrat
         threshold: 0.5, // Ko 20% elementa pride v vidno polje
     });
 

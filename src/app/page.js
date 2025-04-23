@@ -6,6 +6,7 @@ import FadeInWhenVisible from "@/components/FadeInWhenVisible";
 import SideNav from "@/components/SideNavigation";
 import { motion, AnimatePresence } from "framer-motion";
 import HyperLink from "@/components/HyperLink";
+import AnimatedImage from "@/components/AnimatedImage";
 
 export default function Home() {
     return (
@@ -39,13 +40,11 @@ export default function Home() {
                         </FadeInWhenVisible>
 
                         <FadeInWhenVisible>
-                            <div className={"lg:min-h-screen content-center"}>
-                                <div className="relative w-full sm:w-64 h-64 mx-auto content-center">
-                                    <Image src="/me.jpg" alt="My profile" layout="fill" objectFit="cover"/>
-                                </div>
+                            <div className={"min-h-screen content-center"}>
+                                <AnimatedImage />
                             </div>
-
                         </FadeInWhenVisible>
+
 
                         {/* Work Experience */}
                         <FadeInWhenVisible>
