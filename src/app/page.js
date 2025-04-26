@@ -7,6 +7,7 @@ import SideNav from "@/components/SideNavigation";
 import { motion, AnimatePresence } from "framer-motion";
 import HyperLink from "@/components/HyperLink";
 import AnimatedImage from "@/components/AnimatedImage";
+import ProjectsSection from "@/components/StackProjects";
 
 export default function Home() {
     return (
@@ -46,35 +47,32 @@ export default function Home() {
                         </FadeInWhenVisible>
 
 
-                        {/* Work Experience */}
-                        <FadeInWhenVisible>
-                            <div id="work" className="col-span-1 sm:col-span-2 mt-20 min-h-screen content-center">
-                                <h2 className="text-4xl sm:text-5xl font-bold">Where I've Worked<span
-                                    className={"text-[var(--primary)]"}>.</span></h2>
-                                <p className="mt-4 text-base sm:text-lg opacity-35">
-                                    I was first introduced to programming and computer science in technical high school, where I chose computer science as an elective subject. I further deepened my knowledge at the Faculty of Electrical Engineering, Computer Science, and Information Technology.
+                        {/*/!* Work Experience *!/*/}
+                        {/*<FadeInWhenVisible>*/}
+                        {/*    <div id="work" className="col-span-1 sm:col-span-2 mt-20 min-h-screen content-center">*/}
+                        {/*        <h2 className="text-4xl sm:text-5xl font-bold">Where I've Worked<span*/}
+                        {/*            className={"text-[var(--primary)]"}>.</span></h2>*/}
+                        {/*        <p className="mt-4 text-base sm:text-lg opacity-35">*/}
+                        {/*            I was first introduced to programming and computer science in technical high school, where I chose computer science as an elective subject. I further deepened my knowledge at the Faculty of Electrical Engineering, Computer Science, and Information Technology.*/}
 
-                                    I am currently in the final year of my Computer Science and Information Technologies university program in Maribor. Throughout my studies, I have gained valuable experience, including working in teams where we developed several projects. These experiences have strengthened my technical skills and my ability to collaborate effectively in group settings.
-                                </p>
-                            </div>
-                        </FadeInWhenVisible>
-                        <FadeInWhenVisible>
-                            <div id="work" className="col-span-1 sm:col-span-2 mt-20 min-h-screen content-center">
-                                <p className="mt-4 text-base sm:text-lg opacity-35">
-                                    Working on ...
-                                    {/*Tukaj bodo prisli logotipi firm kjer sem delal. Lisca, Bartog, Rondo, Skavti.*/}
+                        {/*            I am currently in the final year of my Computer Science and Information Technologies university program in Maribor. Throughout my studies, I have gained valuable experience, including working in teams where we developed several projects. These experiences have strengthened my technical skills and my ability to collaborate effectively in group settings.*/}
+                        {/*        </p>*/}
+                        {/*    </div>*/}
+                        {/*</FadeInWhenVisible>*/}
+                        {/*<FadeInWhenVisible>*/}
+                        {/*    <div id="work" className="col-span-1 sm:col-span-2 mt-20 min-h-screen content-center">*/}
+                        {/*        <p className="mt-4 text-base sm:text-lg opacity-35">*/}
+                        {/*            Working on ...*/}
+                        {/*            /!*Tukaj bodo prisli logotipi firm kjer sem delal. Lisca, Bartog, Rondo, Skavti.*!/*/}
 
-                                </p>
-                            </div>
-                        </FadeInWhenVisible>
+                        {/*        </p>*/}
+                        {/*    </div>*/}
+                        {/*</FadeInWhenVisible>*/}
 
                         {/* Projects */}
                         <FadeInWhenVisible>
                             <div id="work" className="col-span-1 sm:col-span-2 mt-20 min-h-screen content-center">
-                                <p className="mt-4 text-base sm:text-lg opacity-35">
-                                    Working on ...
-                                    {/*Tukaj bodo prisli screenshoti in povezave na repozitorij od mojih projektov.*/}
-                                </p>
+                                <ProjectsSection />
                             </div>
                         </FadeInWhenVisible>
                         <FadeInWhenVisible>

@@ -7,7 +7,7 @@ import ThemeSwitcher from "@/components/ThemeSwitcher"; // Ikone za meni
 
 const sections = [
     { id: "about", label: "About Me" },
-    { id: "work", label: "Experience" },
+    // { id: "work", label: "Experience" },
     { id: "projects", label: "Projects" },
     { id: "contact", label: "Get in Touch" },
 ];
