@@ -31,7 +31,7 @@ export default function Home() {
                         <SideNav />
                         {/* About Me */}
                         <FadeInWhenVisible>
-                            <div id="about" className="min-h-screen content-center">
+                            <div id="about" className="content-center">
                                 <h2 className="text-4xl sm:text-5xl font-bold">About Me<span
                                     className={"text-[var(--primary)]"}>.</span></h2>
                                 <p className="mt-4 text-base sm:text-lg opacity-35">
@@ -41,7 +41,7 @@ export default function Home() {
                         </FadeInWhenVisible>
 
                         <FadeInWhenVisible>
-                            <div className={"min-h-screen content-center"}>
+                            <div className={"content-center"}>
                                 <AnimatedImage />
                             </div>
                         </FadeInWhenVisible>
@@ -71,12 +71,12 @@ export default function Home() {
 
                         {/* Projects */}
                         <FadeInWhenVisible>
-                            <div id="work" className="col-span-1 sm:col-span-2 mt-20 min-h-screen content-center">
+                            <div id="work" className="col-span-1 sm:col-span-2 mt-20 content-center">
                                 <ProjectsSection />
                             </div>
                         </FadeInWhenVisible>
                         <FadeInWhenVisible>
-                            <div id="projects" className="col-span-1 sm:col-span-2 mt-20 min-h-screen content-center">
+                            <div id="projects" className="col-span-1 sm:col-span-2 mt-20 content-center">
                                 <h2 className="text-4xl sm:text-5xl font-bold">My Projects<span
                                     className={"text-[var(--primary)]"}>.</span></h2>
                                 <p className="mt-4 text-base sm:text-lg opacity-35">
@@ -87,7 +87,7 @@ export default function Home() {
 
                         {/* Contact */}
                         <FadeInWhenVisible>
-                            <div id="contact" className="mt-20 min-h-screen content-center">
+                            <div id="contact" className="mt-20 content-center">
                                 <h2 className="text-4xl sm:text-5xl font-bold">Get in touch<span
                                     className={"text-[var(--primary)]"}>.</span></h2>
                                 <p className="mt-4 text-base sm:text-lg opacity-35">
@@ -109,7 +109,7 @@ export default function Home() {
                             </div>
                         </FadeInWhenVisible>
                         <FadeInWhenVisible>
-                            <div id="work" className="col-span-1 sm:col-span-2 mt-20 min-h-screen content-center">
+                            <div id="work" className="col-span-1 sm:col-span-2 mt-20 content-center">
                                 <p className="mt-4 text-base sm:text-lg opacity-35">
                                     Working on ...
                                 {/*Obrazec za kontaktiranje.*/}
@@ -119,6 +119,7 @@ export default function Home() {
                     </div>
 
                 </main>
+                {/*<ProjectsSection />*/}
                 <footer className="m-10 sm:m-20 text-center">
                     <p className="opacity-35 mt-10">Designed & Built by David Gole</p>
                     <div className="mt-4 flex justify-center">

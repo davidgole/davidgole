@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
-import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import Image from "next/image";
 
 const projects = [
     {
@@ -14,6 +15,14 @@ const projects = [
     },
     {
         id: 2,
+        title: "elektropolnilnice.eu",
+        shortDescription: "Website with all electric stations in Maribor.",
+        longDescription: "Fully responsive portfolio showcasing my work.",
+        image: "/projects/elektropolnilnice.png",
+        githubLink: "https://github.com/yourusername/portfolio",
+    },
+    {
+        id: 3,
         title: "Game 2048",
         shortDescription: "Desktop game 2048 made with libGDX in Java.",
         longDescription: "Fun puzzle game built in Java using libGDX.",
@@ -21,7 +30,7 @@ const projects = [
         githubLink: "https://github.com/yourusername/ecommerce-store",
     },
     {
-        id: 3,
+        id: 4,
         title: "davidgole.eu",
         shortDescription: "This website as my portfolio.",
         longDescription: "Personal portfolio built with Next.js and TailwindCSS.",
@@ -32,52 +41,53 @@ const projects = [
 
 export default function ProjectsStack() {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const { scrollYProgress } = useScroll();
+    const scrollProgress = useTransform(scrollYProgress, [0, 1], [0, projects.length - 1]); // <-- -1 tu!
 
-    const nextProject = () => {
-        setCurrentIndex((prev) => (prev + 1) % projects.length);
-    };
+    useEffect(() => {
+        const unsubscribe = scrollProgress.on("change", (latest) => {
+            const newIndex = Math.round(latest); // <-- round tukaj
+            if (newIndex !== currentIndex && newIndex >= 0 && newIndex < projects.length) {
+                setCurrentIndex(newIndex);
+            }
+        });
 
-    const prevProject = () => {
-        setCurrentIndex((prev) => (prev - 1 + projects.length) % projects.length);
-    };
+        return () => unsubscribe();
+    }, [scrollProgress, currentIndex]);
 
     return (
-        <section
-            id="projects"
-            className="w-full h-screen flex flex-col items-center justify-center gap-8"
-        >
-            <div className="relative w-full max-w-5xl h-1/2 flex items-center justify-center">
-                <div className="stack w-full h-full">
+        <section id="projects" className="w-full h-[300vh] relative">
+            <div className="sticky top-0 h-screen w-full flex items-center justify-center">
+                <div className="relative w-full max-w-5xl h-1/2">
                     {projects.map((project, index) => (
                         <motion.div
                             key={project.id}
-                            className="relative w-full h-full group overflow-hidden rounded-box"
-                            initial={{ opacity: 0, scale: 0.95 }}
+                            className="absolute inset-0 grid place-items-center rounded-box border-2 border-[var(--primary)] bg-[var(--background)] p-8"
+                            initial={{ opacity: 0, y: 50 }}
                             animate={{
                                 opacity: index === currentIndex ? 1 : 0,
-                                scale: index === currentIndex ? 1 : 0.95,
+                                y: index === currentIndex ? 0 : 50,
                                 zIndex: index === currentIndex ? 10 : 0,
                             }}
-                            transition={{ duration: 0.5, ease: "easeInOut" }}
+                            transition={{ type: "spring", stiffness: 100 }}
                         >
-                            {/* Okno za projekt */}
-                            <div className="mockup-window w-full h-full bg-[var(--surface)] flex items-center justify-center border border-[var(--primary)] rounded-box overflow-hidden">
-                                <img
-                                    src={project.image}
-                                    alt={project.title}
-                                    className="w-full h-full object-cover"
-                                />
-                            </div>
-
-                            {/* Hover efekt */}
-                            <div className="absolute top-0 left-0 w-full h-full bg-[var(--primary)] opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-center items-center text-white p-6 rounded-box text-center">
-                                <h2 className="text-3xl font-bold mb-2">{project.title}</h2>
-                                <p className="text-lg mb-4">{project.shortDescription}</p>
+                            <div className="text-center">
+                                <h2 className="text-3xl font-bold mb-4">{project.title}</h2>
+                                <p className="text-xl mb-6">{project.shortDescription}</p>
+                                <div className="relative h-64 w-full">
+                                    <Image
+                                        src={project.image}
+                                        alt={project.title}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <p className="mt-6 opacity-80">{project.longDescription}</p>
                                 <a
                                     href={project.githubLink}
+                                    className="mt-4 inline-block text-[var(--primary)] hover:underline"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="px-4 py-2 mt-2 border-2 border-white rounded-md hover:bg-white hover:text-primary transition-colors"
                                 >
                                     View on GitHub
                                 </a>
@@ -85,22 +95,6 @@ export default function ProjectsStack() {
                         </motion.div>
                     ))}
                 </div>
-            </div>
-
-            {/* Gumbi za navigacijo */}
-            <div className="flex gap-6">
-                <button
-                    onClick={prevProject}
-                    className="px-6 py-2 border-2 border-[var(--primary)] text-[var(--primary)] rounded-md hover:bg-[var(--primary)] hover:text-white transition-colors"
-                >
-                    Previous
-                </button>
-                <button
-                    onClick={nextProject}
-                    className="px-6 py-2 border-2 border-[var(--primary)] text-[var(--primary)] rounded-md hover:bg-[var(--primary)] hover:text-white transition-colors"
-                >
-                    Next
-                </button>
             </div>
         </section>
     );
