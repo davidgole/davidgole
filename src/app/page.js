@@ -72,7 +72,7 @@ export default function Home() {
                         {/* Projects */}
                         <FadeInWhenVisible>
                             <div id="work" className="col-span-1 sm:col-span-2 mt-20 content-center">
-                                <ProjectsSection />
+                                {/*<ProjectsSection />*/}
                             </div>
                         </FadeInWhenVisible>
                         <FadeInWhenVisible>
@@ -119,7 +119,7 @@ export default function Home() {
                     </div>
 
                 </main>
-                {/*<ProjectsSection />*/}
+                <ProjectsSection />
                 <footer className="m-10 sm:m-20 text-center">
                     <p className="opacity-35 mt-10">Designed & Built by David Gole</p>
                     <div className="mt-4 flex justify-center">
