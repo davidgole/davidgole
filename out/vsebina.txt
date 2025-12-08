@@ -1,0 +1,20 @@
+I'm a passionate developer with experience in web technologies, 
+always eager to learn and explore new challenges. My focus is on creating clean, 
+efficient, and user-friendly applications.
+
+
+============== WHERE HAVE I WORKED ============
+Prvo sem se s programiranjem in racunalnistvom spoznal v tehniski gimnaziji kjer sem kot izbirni predmet izbral racunalnistvo, 
+svoje znanje pa sem poglobil na Fakulteti za elektrotehniko, racunalnistvo in informacijske tehnologije.
+Zakljucujem zadnji letnik univerzitetne smeri Racunalnistva in informacijskih tehnologij. Na fakulteti sem dobil veliko
+izkusenj, tudi z delom v skupinah kjer smo izdelali kar nekaj projektov. 
+
+
+Over the years, I've worked with various companies and projects, 
+gaining experience in frontend and backend development. 
+I've collaborated with teams to build scalable and performant applications.
+
+
+============== PROJECTS =============
+Here are some of the projects I've worked on. They range from web applications to open-source contributions. 
+Each project has helped me improve my skills and solve unique challenges.

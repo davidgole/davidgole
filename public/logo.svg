@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="logo.png"
+   inkscape:export-xdpi="58.979485"
+   inkscape:export-ydpi="58.979485"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.77571141"
+     inkscape:cx="367.40468"
+     inkscape:cy="569.15496"
+     inkscape:window-width="1920"
+     inkscape:window-height="1058"
+     inkscape:window-x="546"
+     inkscape:window-y="-6"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="178.32803"
+       y="665.64028"
+       width="344.2967"
+       height="257.78112"
+       id="rect2406" />
+  </defs>
+  <g
+     inkscape:label="Plast 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path234"
+       style="fill:#ffcc00;stroke-width:0.085"
+       d="M 163.97131,129.40186 A 55.124256,55.124256 0 0 1 108.84705,184.52611 55.124256,55.124256 0 0 1 53.722797,129.40186 55.124256,55.124256 0 0 1 108.84705,74.277599 55.124256,55.124256 0 0 1 163.97131,129.40186 Z" />
+    <g
+       aria-label="d"
+       transform="matrix(0.53818465,0,0,0.53818465,-91.201066,-278.57683)"
+       id="text2404"
+       style="font-size:166.667px;font-family:Audiowide;-inkscape-font-specification:'Audiowide, Normal';text-align:center;text-anchor:middle;white-space:pre;shape-inside:url(#rect2406);display:inline;fill:#ffcc00;stroke-width:0.32126">
+      <path
+         d="m 290.66848,779.88062 q 0,-16.51199 6.144,-28.99199 6.336,-12.48 17.088,-19.20001 10.752,-6.72 24,-6.72 10.56,0 19.2,4.41601 8.832,4.41599 13.824,11.904 v -49.728 h 32.832 v 142.07999 h -32.832 v -15.36 q -4.608,7.68001 -13.248,12.288 -8.448,4.608 -19.776,4.608 -13.248,0 -24,-6.71999 -10.752,-6.91201 -17.088,-19.39201 -6.144,-12.672 -6.144,-29.184 z m 80.256,0.19201 q 0,-12.28801 -6.912,-19.39201 -6.72,-7.10399 -16.512,-7.10399 -9.792,0 -16.704,7.10399 -6.72,6.912 -6.72,19.2 0,12.28801 6.72,19.584 6.912,7.104 16.704,7.104 9.792,0 16.512,-7.104 6.912,-7.10399 6.912,-19.39199 z"
+         style="font-weight:bold;font-size:192px;font-family:Poppins;-inkscape-font-specification:'Poppins, Bold';fill:#000000"
+         id="path2524" />
+    </g>
+  </g>
+</svg>
