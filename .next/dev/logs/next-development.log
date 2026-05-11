@@ -1,54 +1,42 @@
-[00:00:02.307] Server  LOG      ✓ Ready in 1591ms
-[00:00:23.486] Server  LOG      ○ Compiling / ...
-[00:00:24.594] Server  WARN    Image with src "/me_remove.png" has legacy prop "layout". Did you forget to run the codemod?
+[00:00:02.053] Server  LOG      ✓ Ready in 1354ms
+[00:00:06.021] Server  LOG      ○ Compiling / ...
+[00:00:06.868] Server  WARN    Image with src "/me_remove.png" has legacy prop "layout". Did you forget to run the codemod?
 Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:00:24.596] Server  WARN    Image with src "/me_remove.png" has legacy prop "objectFit". Did you forget to run the codemod?
+[00:00:06.870] Server  WARN    Image with src "/me_remove.png" has legacy prop "objectFit". Did you forget to run the codemod?
 Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:00:25.176] Browser WARN    Image with src "/me_remove.png" has legacy prop "layout". Did you forget to run the codemod?
+[00:00:07.503] Browser WARN    Image with src "/me_remove.png" has legacy prop "layout". Did you forget to run the codemod?
 Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:00:25.176] Browser WARN    Image with src "/me_remove.png" has legacy prop "objectFit". Did you forget to run the codemod?
+[00:00:07.503] Browser WARN    Image with src "/me_remove.png" has legacy prop "objectFit". Did you forget to run the codemod?
 Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:07:55.112] Server  WARN    Image with src "/me_remove.png" has legacy prop "layout". Did you forget to run the codemod?
+[00:05:30.081] Server  WARN    Image with src "/me_remove.png" has legacy prop "layout". Did you forget to run the codemod?
 Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:07:55.114] Server  WARN    Image with src "/me_remove.png" has legacy prop "objectFit". Did you forget to run the codemod?
+[00:05:30.083] Server  WARN    Image with src "/me_remove.png" has legacy prop "objectFit". Did you forget to run the codemod?
 Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:07:55.620] Browser WARN    Image with src "/me_remove.png" has legacy prop "layout". Did you forget to run the codemod?
+[00:05:30.600] Browser WARN    Image with src "/me_remove.png" has legacy prop "layout". Did you forget to run the codemod?
 Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:07:55.620] Browser WARN    Image with src "/me_remove.png" has legacy prop "objectFit". Did you forget to run the codemod?
+[00:05:30.600] Browser WARN    Image with src "/me_remove.png" has legacy prop "objectFit". Did you forget to run the codemod?
 Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:07:58.921] Browser WARN    Image with src "/me_remove.png" has legacy prop "layout". Did you forget to run the codemod?
+[00:08:05.839] Server  WARN    Image with src "/me_remove.png" has legacy prop "layout". Did you forget to run the codemod?
 Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:07:58.921] Browser WARN    Image with src "/me_remove.png" has legacy prop "objectFit". Did you forget to run the codemod?
+[00:08:05.840] Server  WARN    Image with src "/me_remove.png" has legacy prop "objectFit". Did you forget to run the codemod?
 Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:14:09.515] Server  WARN    Image with src "/me_remove.png" has legacy prop "layout". Did you forget to run the codemod?
+[00:08:06.334] Browser WARN    Image with src "/me_remove.png" has legacy prop "layout". Did you forget to run the codemod?
 Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:14:09.517] Server  WARN    Image with src "/me_remove.png" has legacy prop "objectFit". Did you forget to run the codemod?
+[00:08:06.334] Browser WARN    Image with src "/me_remove.png" has legacy prop "objectFit". Did you forget to run the codemod?
 Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:14:09.888] Browser WARN    Image with src "/me_remove.png" has legacy prop "layout". Did you forget to run the codemod?
+[00:08:51.214] Browser WARN    Image with src "/me_remove.png" has legacy prop "layout". Did you forget to run the codemod?
 Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:14:09.888] Browser WARN    Image with src "/me_remove.png" has legacy prop "objectFit". Did you forget to run the codemod?
+[00:08:51.214] Browser WARN    Image with src "/me_remove.png" has legacy prop "objectFit". Did you forget to run the codemod?
 Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:24:16.607] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? frameborder frameBorder
-[00:24:16.607] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? allowfullscreen allowFullScreen
-[00:31:22.315] Server  WARN    Image with src "/me_remove.png" has legacy prop "layout". Did you forget to run the codemod?
+[00:09:59.642] Server  WARN    Image with src "/me_remove.png" has legacy prop "layout". Did you forget to run the codemod?
 Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:31:22.317] Server  WARN    Image with src "/me_remove.png" has legacy prop "objectFit". Did you forget to run the codemod?
+[00:09:59.644] Server  WARN    Image with src "/me_remove.png" has legacy prop "objectFit". Did you forget to run the codemod?
 Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:31:22.318] Server  ERROR   Invalid DOM property `frameborder`. Did you mean `frameBorder`?
-[00:31:22.319] Server  ERROR   Invalid DOM property `allowfullscreen`. Did you mean `allowFullScreen`?
-[00:38:20.589] Server  WARN    Image with src "/me_remove.png" has legacy prop "layout". Did you forget to run the codemod?
+[00:10:00.017] Browser WARN    Image with src "/me_remove.png" has legacy prop "layout". Did you forget to run the codemod?
 Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:38:20.591] Server  WARN    Image with src "/me_remove.png" has legacy prop "objectFit". Did you forget to run the codemod?
+[00:10:00.017] Browser WARN    Image with src "/me_remove.png" has legacy prop "objectFit". Did you forget to run the codemod?
 Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:38:21.017] Browser WARN    Image with src "/me_remove.png" has legacy prop "layout". Did you forget to run the codemod?
+[00:11:25.019] Browser WARN    Image with src "/me_remove.png" has legacy prop "layout". Did you forget to run the codemod?
 Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:38:21.017] Browser WARN    Image with src "/me_remove.png" has legacy prop "objectFit". Did you forget to run the codemod?
-Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:38:25.024] Browser WARN    Image with src "/me_remove.png" has legacy prop "layout". Did you forget to run the codemod?
-Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:38:25.024] Browser WARN    Image with src "/me_remove.png" has legacy prop "objectFit". Did you forget to run the codemod?
-Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:39:51.089] Browser WARN    Image with src "/me_remove.png" has legacy prop "layout". Did you forget to run the codemod?
-Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:39:51.089] Browser WARN    Image with src "/me_remove.png" has legacy prop "objectFit". Did you forget to run the codemod?
+[00:11:25.019] Browser WARN    Image with src "/me_remove.png" has legacy prop "objectFit". Did you forget to run the codemod?
 Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13

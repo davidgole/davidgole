@@ -1410,10 +1410,6 @@ html {
   margin: 2.5rem;
 }
 
-.m-5 {
-  margin: 1.25rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1458,6 +1454,10 @@ html {
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .block {
@@ -1520,10 +1520,6 @@ html {
   height: 100vh;
 }
 
-.h-auto {
-  height: auto;
-}
-
 .min-h-60 {
   min-height: 15rem;
 }
@@ -1562,6 +1558,10 @@ html {
 
 .max-w-xl {
   max-width: 36rem;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
 }
 
 .-translate-x-1\/2 {
@@ -1609,6 +1609,10 @@ html {
   gap: .5rem;
 }
 
+.gap-3 {
+  gap: .75rem;
+}
+
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1639,10 +1643,6 @@ html {
   border-radius: .375rem;
 }
 
-.rounded-xl {
-  border-radius: .75rem;
-}
-
 .border {
   border-width: 1px;
 }
@@ -1651,29 +1651,12 @@ html {
   border-width: 2px;
 }
 
-.border-0 {
-  border-width: 0;
-}
-
-.border-t {
-  border-top-width: 1px;
-}
-
 .border-\[var\(--primary\)\] {
   border-color: var(--primary);
 }
 
-.border-\[var\(--secondary\)\] {
-  border-color: var(--secondary);
-}
-
 .border-\[var\(--surface\)\] {
   border-color: var(--surface);
-}
-
-.border-gray-700 {
-  --tw-border-opacity: 1;
-  border-color: rgb(55 65 81 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[var\(--background\)\] {
@@ -1747,6 +1730,11 @@ html {
 .py-3 {
   padding-top: .75rem;
   padding-bottom: .75rem;
+}
+
+.py-1 {
+  padding-top: .25rem;
+  padding-bottom: .25rem;
 }
 
 .pt-10 {
