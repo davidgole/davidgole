@@ -8,6 +8,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import HyperLink from "@/components/HyperLink";
 import AnimatedImage from "@/components/AnimatedImage";
 import ProjectsSection from "@/components/StackProjects";
+import ContactForm from "@/components/ContactForm";
+import ProjectCards from "@/components/ProjectCards";
 
 export default function Home() {
     return (
@@ -73,10 +75,11 @@ export default function Home() {
                         <FadeInWhenVisible>
                         <div id="work" className="col-span-1 sm:col-span-2 mt-20 content-center min-h-60 text-center">
                                 {/*</Slideshow or carousel s slikami projektov>*/}
+                                <ProjectCards />
                         </div>
                         </FadeInWhenVisible>
                         <FadeInWhenVisible>
-                            <div id="projects" className="col-span-1 sm:col-span-2 mt-20 content-center">
+                            <div id="projects" className="col-span-2 sm:col-span-2 mt-20 content-center">
                                 <h2 className="text-4xl sm:text-5xl font-bold">My Projects<span
                                     className={"text-[var(--primary)]"}>.</span></h2>
                                 <p className="mt-4 text-base sm:text-lg opacity-35 mb-5">
@@ -84,6 +87,7 @@ export default function Home() {
                                     coursework, I participated in numerous group projects, where I learned how to work
                                     efficiently with teammates and use collaboration tools such as GitHub and Jira.
                                 </p>
+                                
                                 <ul>
                                     <li>
                                         <a
@@ -105,73 +109,6 @@ export default function Home() {
                                             />
                                         </svg>
                                         <span className="font-medium">View My GitHub</span>
-                                        </a>
-                                    </li>
-
-                                    <hr className="my-5 border-[var(--surface)]" />
-
-                                    {/* Gumbi z ikono za zunanjo stran (External Link) */}
-                                    <li className="pt-5">
-                                        <a
-                                        href="/games/wordsGame"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-[var(--background)] border border-[var(--primary)] text-[var(--foreground)] hover:bg-[var(--primary)] hover:text-[var(--background)] transition-all duration-300 group"
-                                        >
-                                        <svg className="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                                        </svg>
-                                        <span className="font-medium">Play d'words (Test)</span>
-                                        </a>
-                                    </li>
-
-                                    <li className="pt-5">
-                                        <a
-                                        href="https://wordlegame-seven.vercel.app/"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-[var(--background)] border border-[var(--primary)] text-[var(--foreground)] hover:bg-[var(--primary)] hover:text-[var(--background)] transition-all duration-300 group"
-                                        >
-                                        <svg className="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                                        </svg>
-                                        <span className="font-medium">Play wordle</span>
-                                        </a>
-                                    </li>
-
-                                    <li className="pt-5">
-                                        <a
-                                        href="https://skavti-trzisce.netlify.app/"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-[var(--background)] border border-[var(--primary)] text-[var(--foreground)] hover:bg-[var(--primary)] hover:text-[var(--background)] transition-all duration-300 group"
-                                        >
-                                        <svg className="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                                        </svg>
-                                        <span className="font-medium">Skavti Tržišče 1</span>
-                                        </a>
-                                    </li>
-                                    <li className="pt-5">
-                                        <a
-                                            href="/game2048.zip" // Pot do datoteke v mapi public
-                                            download="Game2048.zip" // Ta atribut sproži prenos in določi ime datoteke ob prenosu
-                                            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-[var(--background)] border border-[var(--primary)] text-[var(--foreground)] hover:bg-[var(--primary)] hover:text-[var(--background)] transition-all duration-300 group"
-                                        >
-                                            <svg 
-                                            className="w-5 h-5 group-hover:scale-110 transition-transform" 
-                                            fill="none" 
-                                            stroke="currentColor" 
-                                            strokeWidth="2" 
-                                            viewBox="0 0 24 24"
-                                            >
-                                                <path 
-                                                    strokeLinecap="round" 
-                                                    strokeLinejoin="round" 
-                                                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" 
-                                                />
-                                            </svg>
-                                            <span className="font-medium">Game 2048</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -244,12 +181,9 @@ export default function Home() {
                             </div>
                         </FadeInWhenVisible>
                         <FadeInWhenVisible>
-                            {/*<div id="work" className="col-span-1 sm:col-span-2 mt-20 content-center">*/}
-                            {/*    <p className="mt-4 text-base sm:text-lg opacity-35">*/}
-                            {/*        Working on ...*/}
-                            {/*    /!*Obrazec za kontaktiranje.*!/*/}
-                            {/*    </p>*/}
-                            {/*</div>*/}
+                            <div id="contact-form" className="col-span-1 sm:col-span-2">
+                                <ContactForm />
+                            </div>
                         </FadeInWhenVisible>
                     </div>
 
